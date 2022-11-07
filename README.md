@@ -1,1 +1,5 @@
 # ASG1
+# This website will be about a personal portforlio
+# it will include the following: a flexbox, an input and an output via a form to find out about reader's ratings towards the website,
+# A button which users can click to link forward to another page and it will showcase more about me(home page showing an introductory content about myself) next page
+# showing my achiebements, what i achieve to be in the future. From there, there will also be a button/ a cue which you can click and it will show u a total of 3 pages that you can click to,, the home page, my hobbies and achievements respectively. At the bottom of the home page which you can scroll down to, there is also a form which allow users to input in their experience thus far and what they like or dislike about it. For home page and other pages, there will be images and an arrow key where you can click and it will show another image relating to the same topic. Lastly, of course most of the contents or some of the contents will be designed via flexboxes for more adaptilibity to user interface
