@@ -10,6 +10,9 @@
  citations for source code: https://stackoverflow.com/questions/70247650/how-to-trigger-autoplay-for-javascript-carousel-on-page-load
  
  citations for images: https://unsplash.com/photos/atsUqIm3wxo
+ 
  https://unsplash.com/photos/AtPWnYNDJnM
+ 
  https://unsplash.com/photos/23LET4Hxj_U
+ 
  https://unsplash.com/photos/d1UPkiFd04A
