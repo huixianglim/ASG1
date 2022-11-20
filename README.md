@@ -1,7 +1,7 @@
 # ASG1
  Movies recommendation website
- - it shows the top few movies eg top 10 movies of all time and also the ratings for it
- - it also shows the current trending movies and also the ratings of it
+ - it shows the top few movies eg top rated movies of all time, year or month(can be filtered) and also the ratings for it(when you click on the movie title or image)
+ - it also shows the current trending movies and also the ratings of it(when you click on the movie title or image)
  - it will include buttons that you can click to filter popularity by year,month,decade,week or day and also you can filter the movies by genre
  - also have a interactable background that moves according to your cursor
  - when you click onto the movie it will provide you a brief summary of what the movie is about and also a trailer video which you can click onto it
