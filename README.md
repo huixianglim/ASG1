@@ -7,4 +7,8 @@
  - when you click onto the movie it will provide you a brief summary of what the movie is about and also a trailer video which you can click onto it
  - citation site for all the links needed
  - the ratings will be from another website and the trailer will be from  youtube, using the iframe method
- 
+ citations for source code: https://stackoverflow.com/questions/70247650/how-to-trigger-autoplay-for-javascript-carousel-on-page-load
+ citations for images: https://unsplash.com/photos/atsUqIm3wxo
+https://unsplash.com/photos/AtPWnYNDJnM
+https://unsplash.com/photos/23LET4Hxj_U
+https://unsplash.com/photos/d1UPkiFd04A
