@@ -30,7 +30,6 @@ main {
 }
 body{
     font-family: 'Oswald', sans-serif;
-    overflow: hidden;
 }
 
 
@@ -126,8 +125,9 @@ main > img{
     .dot{
         height:10px;
         width:10px;
-    }
+    } 
 }
+
 @media only screen and (min-width:768px){
     .prev,.next,.text{
         font-size: 2em;
