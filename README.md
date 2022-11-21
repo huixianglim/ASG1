@@ -20,3 +20,7 @@
  https://www.flaticon.com/free-icon/movie-symbol-of-video-camera_54335
  
  https://twitter.com/theblackpanther?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor
+
+ https://www.marvel.com/articles/movies/doctor-strange-augmented-reality-experience
+ 
+ https://screenrant.com/black-adam-poster-dwayne-johnson-justice-societ-america/
