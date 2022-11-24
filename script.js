@@ -25,3 +25,22 @@ function showSlides(n) {
 setInterval(function() {
     plusSlides(1)
   }, 5000);
+
+//page 2
+showFilter(1)
+function filter(n){
+    let filter = document.getElementById(n);
+    showFilter(1)
+    let slides = document.getElementsByClassName("filter");
+    slides[0].style.display ="none"
+    filter.style.display = "block"
+
+}
+function showFilter(n) {
+    let i;
+    let slides = document.getElementsByClassName("filter");
+    for (i = 0; i < slides.length; i++){
+        slides[i].style.display ="none"
+        slides[n - 1].style.display ="block"
+    }
+}

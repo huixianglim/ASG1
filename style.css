@@ -25,11 +25,13 @@
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
-main {
+main{
     box-sizing: border-box;
+    margin:0;
 }
 body{
-    font-family: 'Oswald', sans-serif;
+    margin:0;
+    overflow-x:hidden;
 }
 
 
@@ -74,6 +76,8 @@ main > img{
     width:100%;
     text-align: center;
     bottom:40%;
+    font-family: 'Oswald', sans-serif;
+
 }
 .final{
     align-self: center;
@@ -83,6 +87,7 @@ main > img{
     border-radius: 7px;
     background-color: red;
     color: white;
+    font-family: "Oswald",sans-serif;
 
 }
 .sliderImage{
@@ -118,9 +123,9 @@ main > img{
     to{opacity: 1}
 
 }
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1200px){
     .prev,.next,.text{
-        font-size: 1.4em;
+        font-size: 2em;
     }
     .dot{
         height:10px;
@@ -128,8 +133,191 @@ main > img{
     } 
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (max-width:976px){
     .prev,.next,.text{
         font-size: 2em;
     }
+}
+@media only screen and (max-width:768px){
+    .prev,.next,.text{
+        font-size: 2em;
+    }
+}
+@media only screen and (max-width:576px){
+    .prev,.next,.text{
+        font-size: 1.4em;
+    }
+}
+/** PAGE 2 onwards**/
+.home{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+a:link{text-decoration: none;}
+.one{
+    display: flex;
+    font-size: 2rem;
+}
+.containerheader2{
+    display:flex;
+    margin-top: 20px;
+    font-family:'Segoe UI';
+    flex-direction: row;
+    justify-content: space-around;
+}
+.search{
+    border-radius: 10px;
+    height:1.2rem;
+    padding: 0.58em 0.6em 0.58em 2.1em;
+    text-align: center;
+    background-image: url(Images/searching-magnifying-glass.png);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sliderImage2{
+    width: 100%; 
+    height:20rem;
+    border-radius: 2rem;
+
+}
+.slideshow-container2{
+    max-width:85%;
+    position:relative;
+    margin:auto;
+}
+.prev2,.next2{
+    cursor:pointer;
+    position:absolute;
+    top:45%;
+    width:auto;
+    padding:16px;
+    margin-top:-22px;
+    color:white;
+    font-weight: bold;
+    font-size:18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next2{
+    right:0;
+    border-radius: 3px 0 0 3px;
+}
+.text2{
+    color:red;
+    font-family: 'Oswald', sans-serif;
+    font-size:1.3em;
+    padding: 8px 12px;
+    position:absolute;
+    width:100%;
+    top:0%;
+    left:12%;
+}
+:root {
+    --colorOne: #141414;
+    --ColorTwo: #5c5c5c;
+    --colorWhite: #e5e5e5;
+    --fontOne: 'Oswald',sans-serif;
+    --tileBorderRadius: 4px;
+}
+.owl{
+    font-family: var(--fontOne);
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+.thumbSection{
+    padding-top:3%;
+    color:red;
+}
+.thumbTitle{
+    font-size:1.3rem;
+    line-height:14px;
+    font-weight:500;
+    margin: 0 4% 12px;
+
+}
+.thumbTiles.swiper{
+    padding: 0 4%;
+
+}
+.thumbTile{
+    width:20%;
+
+}
+.thumbTile__image{
+    width:100%;
+    border-radius: var(--tileBorderRadius);
+    height:10rem;
+    transition: height 0.6s ease;
+    transition: width 0.6s ease;
+
+
+}
+.thumbTiles .swiper-button-next,
+.thumbTiles .swiper-button-prev{
+    height:100%;
+    width:4%;
+    width:calc(4%-5px);
+    top:0;
+    bottom:0;
+    margin:0;
+    transition: background-color 0.5s ease;
+}
+.thumbTiles .swiper-button-prev{
+    left:0;
+    border-top-right-radius: var(--tileBorderRadius);
+    border-bottom-right-radius: var(--tileBorderRadius);
+}
+.thumbTiles .swiper-button-next{
+    right:0;
+    border-top-left-radius: var(--tileBorderRadius);
+    border-bottom-left-radius: var(--tileBorderRadius);
+}
+.thumbTiles .swiper-button-next:hover,
+.thumbTiles .swiper-button-prev:hover{
+    background-color: rgba(20,20,20,0.5);
+}
+.thumbTiles .swiper-button-next,
+.thumbTiles .swiper-button-prev{
+    color:#fff;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;
+}
+.thumbTiles .swiper-button-next:hover,
+.thumbTiles .swiper-button-prev:hover{
+    transform: scale(1.25);        
+}
+.thumbTile__image:hover{
+    transform: scale(1.02);
+    
+}
+.filterbutton{
+    background-color: white;
+    font-family: "Oswald",sans-serif;
+    padding:0 1.3rem;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+.filterbutton:hover{
+    transform: scale(1.25);
+}
+.filter{display: none;
+}
+.thumbTitle.special{
+    font-size:1.3rem;
+    line-height:14px;
+    font-weight:2rem;
+    margin: 1% 4%;
 }
