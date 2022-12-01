@@ -5,23 +5,23 @@
         <meta http-equiv ="X-UA-Compatible" content="IE=edge">
         <meta name ="viewport" content="width-device-width, 
         initial-scale=1.0">
-        <link rel = 'stylesheet' href ='style.css'>
+        <link rel = "stylesheet" href = "normalize.css">
+        <link rel = 'stylesheet' href ='style.css'>    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>       
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     </head>
     <body>
         <header>
             <div class = "containerheader2">
                 <div class ="one">Moviex <img class = "logoresize"src="Images/MovieLogo.png" alt="image failed to load" style = "margin-left: 0%;"></div>
-                <a class = "home" href ="index.html">Home</a>
-                <form action ="#" method="get" class="searchbar">
-                    <input class = "search" type = "text" placeholder="Search">
-                </form>
+                <nav>
+                  <div class="navigation"><a class="nav-but" href="index.html">Introduction</a>
+                      <a class="nav-but" href="page2.html">Home</a></div>
+                </nav>
+                    <input class = "search" type = "text" placeholder="Search">                    
             </div>
             <br>
             <div class="slideshow-container2">
@@ -31,13 +31,13 @@
                     </div>
                 </div>
                 <div class="mySlides fade">                
-                    <img src="Images/doctor strange.jpg" class = "sliderImage2">
+                    <img src="Images/spiderman2.jpg" class = "sliderImage2">
                     <div class="text2">
                         Recent Hottest
                     </div>
                 </div>
                 <div class="mySlides fade">               
-                    <img src="Images/Black-Adam.avif" class = "sliderImage2">
+                    <img src="Images/BlackAdam2.jpg" class = "sliderImage2">
                     <div class="text2">
                         Recent Hottest
                     </div>
@@ -61,27 +61,27 @@
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
+                        <a class = "thumbTile" href="Wakanda.html">
                             <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
+                        <a class = "thumbTile" href="Wakanda.html">
                             <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
+                        <a class = "thumbTile" href="Wakanda.html">
                             <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
+                        <a class = "thumbTile" href="Wakanda.html">
                             <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
+                        <a class = "thumbTile" href="Wakanda.html">
                             <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
@@ -94,46 +94,156 @@
                   </div>
             </section>
             <section class="thumbSection">
-                <h2 class="thumbTitle">Top Rated Movies</h2>
-                <div class="thumbTiles swiper">
+                <div style="display: flex;">
+                  <h2 class="thumbTitle">Top Rated Movies</h2>
+                  <label for ="dropdown">Sorted By:</label>
+                  <select name="dropdown" id="dropdown" onchange="dropdown(this.value)">
+                    <option value="year">Year</option>
+                    <option value="month">Month</option>
+                    <option value="day">Day</option>
+                    <option value="alltime">All Time</option>
+                  </select>
+                </div>
+                <div class="thumbTiles swiper dropdown" id="year">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="Black-Adam.html">
+                            <img class ="thumbTile__image" src ="Images/BlackAdam2.jpg" alt="Movie">
+                        </a>
+                       </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="Black-Adam.html">
+                            <img class ="thumbTile__image" src ="Images/BlackAdam2.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="Black-Adam.html">
+                            <img class ="thumbTile__image" src ="Images/BlackAdam2.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="Black-Adam.html">
+                            <img class ="thumbTile__image" src ="Images/BlackAdam2.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="Black-Adam.html">
+                            <img class ="thumbTile__image" src ="Images/BlackAdam2.jpg" alt="Movie">
+                        </a>
+                      </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="thumbTiles swiper dropdown" id="month">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/batman.webp" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/batman.webp" alt="Movie">
                         </a>
                       </div>
-
-                      
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/batman.webp" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/batman.webp" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/batman.webp" alt="Movie">
+                        </a>
+                      </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="thumbTiles swiper dropdown" id="day">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        </a>
+                      </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="thumbTile swiper-button-prev"></div>
+                    <div class="thumbTile swiper-button-next"></div>
+                  </div>
+                  <div class="thumbTiles swiper dropdown" id="alltime">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/spiderman2.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/spiderman2.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/spiderman2.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/spiderman2.jpg" alt="Movie">
+                        </a>
+                      </div>
+                      <div class="swiper-slide">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/spiderman2.jpg" alt="Movie">
+                        </a>
+                      </div>
                     </div>
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                   </div>
             </section>
+            <!--Explore slider-->
             <section class="thumbSection">
-                <div style="display: flex;"><h2 class="thumbTitle special">Explore:</h2>
+                <div style="display: flex; flex-shrink: 20;"><h2 class="thumbTitle special">Explore:</h2>
                 <button class="filterbutton" onclick="filter('action')"> Action</button>
                 <button class="filterbutton" onclick="filter('horror')"> Horror</button>
                 <button class="filterbutton" onclick="filter('thriller')"> Thriller</button>
@@ -145,28 +255,28 @@
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/romance2.png" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/romance2.png" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/romance2.png" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/romance2.png" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/romance2.png" alt="Movie">
                         </a>
                       </div>
                     </div>
@@ -180,28 +290,28 @@
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Black-Adam.avif" alt="Movie">
+                        <a class = "thumbTile" href="Wakanda.html">
+                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Black-Adam.avif" alt="Movie">
+                        <a class = "thumbTile" href="Wakanda.html">
+                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Black-Adam.avif" alt="Movie">
+                        <a class = "thumbTile" href="Wakanda.html">
+                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Black-Adam.avif" alt="Movie">
+                        <a class = "thumbTile" href="Wakanda.html">
+                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/Black-Adam.avif" alt="Movie">
+                        <a class = "thumbTile" href="Wakanda.html">
+                            <img class ="thumbTile__image" src ="Images/Wakanda.jpg" alt="Movie">
                         </a>
                       </div>
                     </div>
@@ -215,28 +325,28 @@
                     <div class="swiper-wrapper">
                       <!-- Slides -->
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/horror2.webp" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/horror2.webp" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/horror2.webp" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/horror2.webp" alt="Movie">
                         </a>
                       </div>
                       <div class="swiper-slide">
-                        <a class = "thumbTile" href="page3.html">
-                            <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                        <a class = "thumbTile" href="#">
+                            <img class ="thumbTile__image" src ="Images/horror2.webp" alt="Movie">
                         </a>
                       </div>
                     </div>
@@ -250,28 +360,28 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/thriller4.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/thriller4.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/thriller4.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/thriller4.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/thriller4.jpg" alt="Movie">
                   </a>
                 </div>
               </div>
@@ -284,28 +394,28 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/mystery2.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/mystery2.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/mystery2.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/mystery2.jpg" alt="Movie">
                   </a>
                 </div>
                 <div class="swiper-slide">
-                  <a class = "thumbTile" href="page3.html">
-                      <img class ="thumbTile__image" src ="Images/doctor strange.jpg" alt="Movie">
+                  <a class = "thumbTile" href="#">
+                      <img class ="thumbTile__image" src ="Images/mystery2.jpg" alt="Movie">
                   </a>
                 </div>
               </div>
@@ -314,11 +424,15 @@
               <div class="swiper-button-next"></div>
             </div>
       </section>
-      </section>
             
-
-        
         </main>
+        <br>
+      <footer>
+        <div class="footer">
+          Citations: <a href="citations.html">click here</a>
+        </div>
+      </footer>
+      <br>
         <script src ="script.js"></script>
         <script>
         const swiper = new Swiper('.swiper', {

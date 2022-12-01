@@ -27,7 +27,8 @@ setInterval(function() {
   }, 5000);
 
 //page 2
-showFilter(1)
+showFilter(2)
+showDrop(1)
 function filter(n){
     let filter = document.getElementById(n);
     showFilter(1)
@@ -42,5 +43,22 @@ function showFilter(n) {
     for (i = 0; i < slides.length; i++){
         slides[i].style.display ="none"
         slides[n - 1].style.display ="block"
+    }
+}
+function dropdown(n){
+    let values = document.getElementById(n);
+    showDrop(1);
+    let dropdown = document.getElementsByClassName("dropdown");
+    dropdown[0].style.display="none"
+    values.style.display = "block"
+    
+}
+//page 3
+function showDrop(n) {
+    let i;
+    let dropdown = document.getElementsByClassName("dropdown");
+    for (i = 0; i < dropdown.length; i++){
+        dropdown[i].style.display ="none"
+        dropdown[n - 1].style.display ="block"
     }
 }
