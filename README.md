@@ -3,7 +3,6 @@
  - it shows the top few movies eg top rated movies of all time(can be filtered to show year or month or etc) and also the ratings for it(when you click on the movie title or image)
  - it also shows the current trending movies and also the ratings of it(when you click on the movie title or image)
  - it will include buttons that you can click to filter the movies shown by genre
- - also have a interactable background that moves according to your cursor
  - when you click onto the movie it will provide you a brief summary of what the movie is about and also a trailer video and also a short list of the main characters
  - citation site for all the links needed
  - the ratings will be from another website and the trailer will be from  youtube, using the iframe method
