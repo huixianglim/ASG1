@@ -1,4 +1,5 @@
 # ASG1
+# website live at:https://huixianglim.github.io/ASG1/
 # Project Name: MOVIEX
 this project is to essentially recreate an entire movie review website from scratch. It will showcase the hottest movies and the reviews, ratings and descriptions for it. This website is made such that it has many functions available to the users so that they can easily navigate and filter out what specific movies that they would wana learn more of. 
 
