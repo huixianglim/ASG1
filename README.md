@@ -21,8 +21,16 @@ No other features that i wanted to implement. At first i wanted to implement a m
 #Testing
 As for testing, I just kept on clicking on every function that I newly implemented. Some problems I found along the way was that some of the functions will clash against each other and in order to fix this, i decided to use multiple script.js files so that it fits each page will and nicely. Second thing that I tested alot was the media query css. I went to replit.com and posted my html, css and js files there and run the website on my phone to see how a mobile device would interact with the website itself. I used replit alot to fix my search bar recommendations and also my characters slider as the content would always overflow on phone but thankfully now  i managed to fix it. 
 I discovered some bugs along the way with my website. Firstly, some of the elements are positioned relative and this created some empty white space towards the left hand side of screen and in order to fix this i used the overflow-y:hidden functions.
-#Credits
+As for how the mobile version of the website looks like, the form for the movie ratings webpage will be bigger and the word fonts generally will slightly be bigger but the filter button for the movie page, the genre one will be smaller in order to fit everything tgt. On mobile, the amount of slides per view is around 2. More or less its almost the same, with just elements like the nav bar, search bar and word fonts being smaller.
 
+# Technology used
+- css
+- js
+- html
+- replit.com
+- visual studio code
+
+# Credits
 # Content
 - https://www.imdb.com/title/tt9114286/plotsummary
 - https://www.youtube.com/watch?v=jsNL4l_ib48
