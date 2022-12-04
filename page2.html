@@ -15,20 +15,20 @@
     </head>
     <body>
         <header>
-            <div class = "containerheader2">
-                <div class ="one">Moviex <img class = "logoresize2"src="Images/MovieLogo.png" alt="image failed to load" style = "margin-left: 0%;"></div>
+            <div class = "containerheader2"><!--header-->
+                <div class ="one">Moviex <img class = "logoresize2"src="Images/MovieLogo.png" alt="image failed to load" style = "margin-left: 0%;"></div> <!--logo plus website name-->
                 <nav>
-                  <div class="navigation"><a class="nav-but" href="index.html">Introduction</a>
+                  <div class="navigation"><a class="nav-but" href="index.html">Introduction</a> <!--nav bar-->
                       <a class="nav-but" href="page2.html">Home</a></div>
                 </nav>
                       <div>
-                      <input class = "search" type = "text" placeholder="Search" id="input">
+                      <input class = "search" type = "text" placeholder="Search" id="input"> <!--search bar-->
                       <div class="list"></div>
                       </div>
 
             </div>
             <br>
-            <div class="slideshow-container2">
+            <div class="slideshow-container2"> <!--slide show-->
                 <div class="mySlides fade">
                     <img src="Images/Wakanda.jpg" class = "sliderImage2">
                     <div class="text2">Recent Hottest
@@ -52,7 +52,7 @@
             </div>
             <br>
             <div style = "text-align: center">
-                <span class = "dot active" onclick="CurrentSlides(1)"></span>
+                <span class = "dot active" onclick="CurrentSlides(1)"></span> <!--the dots for the slide show-->
                 <span class = "dot" onclick="CurrentSlides(2)"></span>
                 <span class = "dot" onclick="CurrentSlides(3)"></span>
             </div>
@@ -60,7 +60,7 @@
         <main class ="owl">  
             <section class="thumbSection">
                 <h2 class="thumbTitle">Recommended for beginners</h2>
-                <div class="thumbTiles swiper">
+                <div class="thumbTiles swiper"> <!--owl carousel over here-->
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                       <!-- Slides -->
@@ -104,16 +104,16 @@
             </section>
             <section class="thumbSection">
                 <div style="display: flex;">
-                  <h2 class="thumbTitle">Top Rated Movies</h2>
+                  <h2 class="thumbTitle">Top Rated Movies</h2> <!--drop down filter part-->
                   <label for ="dropdown">Sorted By:</label>
-                  <select name="dropdown" id="dropdown" onchange="dropdown(this.value)">
+                  <select name="dropdown" id="dropdown" onchange="dropdown(this.value)"> <!--drop down the onchange has a another function connected to it-->
                     <option value="year">Year</option>
                     <option value="month">Month</option>
                     <option value="day">Day</option>
                     <option value="alltime">All Time</option>
                   </select>
                 </div>
-                <div class="thumbTiles swiper dropdown" id="year">
+                <div class="thumbTiles swiper dropdown" id="year"> <!--owl carousel-->
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                       <!-- Slides -->
@@ -272,8 +272,8 @@
             </section>
             <!--Explore slider-->
             <section class="thumbSection">
-                <div style="display: flex;"><h2 class="thumbTitle special">Explore:</h2>
-                <button class="filterbutton" onclick="filter('action')"> Action</button>
+                <div style="display: flex;"><h2 class="thumbTitle special">Explore:</h2> <!--filter function part-->
+                <button class="filterbutton" onclick="filter('action')"> Action</button> <!--all the filters-->
                 <button class="filterbutton" onclick="filter('horror')"> Horror</button>
                 <button class="filterbutton" onclick="filter('thriller')"> Thriller</button>
                 <button class="filterbutton" onclick="filter('romance')"> Romance</button>
@@ -483,7 +483,7 @@
         <br>
       <footer>
         <div class="footer">
-          Citations: <a href="citations.html">click here</a>
+          Citations: <a href="citations.html">click here</a> <!--citations page-->
         </div>
       </footer>
       <br>

@@ -15,10 +15,10 @@
     <title>Movie Document</title>
 </head>
 <body>
-    <header>
+    <header> <!--movie logo plus website name-->
         <div class = "containerheader">Moviex <img class = "logoresize"src="Images/MovieLogo.png" alt="image failed to load" style = "margin-left: 0%;">
         <nav>
-            <div class="navigation"><a class="nav-but" href="index.html">Introduction</a>
+            <div class="navigation"><a class="nav-but" href="index.html">Introduction</a> <!--nav bar-->
                 <a class="nav-but" href="page2.html">Home</a></div>
         </nav>
         </div>
@@ -27,16 +27,16 @@
     </header>
     <br><br>
     <main>
-    <div class = "container">
+    <div class = "container"> <!--movie website video-->
         <iframe class ="class1" width="80%" height="370vw" src="https://www.youtube.com/embed/je0aAf2f8XQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
     </div>
-    <div style="display: flex;"> <p class = "movieName">La La Land</p>
+    <div style="display: flex;"> <p class = "movieName">La La Land</p> <!--movie name plus ratings-->
     <p class="ratings">Ratings: 8.0/10</p> <img class ="star" src ="Images/star.png" alt="star">
     
     
     </div> 
-    <div class="about"><p class="aboutContents">About</p>
+    <div class="about"><p class="aboutContents">About</p> <!--movie description-->
         <p class="aboutContents">During the opening credits, the movie we are viewing is said to have been filmed in CINEMASCOPE (like the old-time musicals) and then the screen expands from box format to wide. We find ourselves on the 105/110 interchange in Los Angeles. People listen to various forms of music in their cars. Then one random woman (Reshma Gajjar) gets out of her vehicle and starts singing and dancing (ANOTHER DAY OF SUN) to camera (à la a musical), about how great it is being in sunny California. Someone else exits his car and joins her. Pretty soon, everyone has left their car and is singing the song while dancing in the street or on the cars that are parked via the traffic jam, everything synchronized for the full-length musical number.
 
             The song ends and everyone gets back in their cars. We are told it is WINTER. Traffic finally begins to move. Inside her Toyota Prius, Mia (Emma Stone) appears to be talking to someone on the phone. In his classic car, Sebastian (Ryan Gosling) honks at her to move. We realize she isn't talking to anyone but is practicing for an upcoming audition. Sebastian goes around her, glaring, while she flips him off. She then murmurs that she should probably move as she's obstructing the traffic flow.
@@ -112,7 +112,7 @@
     
     </div>
     <br>
-    <p class ="movieName">Main Characters</p>
+    <p class ="movieName">Main Characters</p> <!--main characters slider-->
     <div>
         <div class="swiper special">
             <!-- Additional required wrapper -->
@@ -155,15 +155,15 @@
     <br>
     <br>
     <br>
-    <footer>
-        <div style="display: flex; justify-content:center;">
+    <footer> <!--form-->
+        <div style="display: flex; justify-content:center;"> 
         <form method="post" action="#">
         <div class="comments">
-            <p class="words">Ratings</p>
+            <p class="words">Ratings</p> 
             
             <div class="stars">
                 
-                <input type="radio" name="rate" id="rate-5" onclick="lol('#five')">
+                <input type="radio" name="rate" id="rate-5" onclick="lol('#five')"> <!--stars with onclick functions-->
                 <label for="rate-5"></label>
                 <input type="radio" name="rate" id="rate-4" onclick="lol('#four')">
                 <label for="rate-4"></label>
@@ -177,11 +177,11 @@
             <div class="input-stars">
                 <h1 class="rates" id="five">I love this movie</h1>
                 <h1 class="rates" id="four">I like this movie</h1>
-                <h1 class="rates" id="three">I'm ok with this movie</h1>
+                <h1 class="rates" id="three">I'm ok with this movie</h1> <!--texts for the forms-->
                 <h1 class="rates" id="two">I dislike this movie</h1>
                 <h1 class="rates" id="one">I hate this movie</h1>
             </div>
-             <textarea rows="10" cols="60" class="textArea" placeholder="Write Your Reviews Here" ></textarea>
+             <textarea rows="10" cols="60" class="textArea" placeholder="Write Your Reviews Here" ></textarea> 
              <button type="submit" value="submit">Submit</button>
         </div>
         
@@ -190,7 +190,7 @@
 
     </div>
         <div style="display:block; height:5vw; width:100%;"></div> <!--empty space for better looks purposes-->
-        <a class = "back" href="page2.html">Back to movie Page</a>
+        <a class = "back" href="page2.html">Back to movie Page</a> <!--back to movie page button-->
         
     </footer>
     <script src="script3.js" defer></script>

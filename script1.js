@@ -1,12 +1,12 @@
-var slideIndex = 1;
+var slideIndex = 1; //slider 
 showSlides(slideIndex);
-function plusSlides(n) {
+function plusSlides(n) { //function for the arrow key
     showSlides(slideIndex += n);
 }
-function CurrentSlides(n) {
+function CurrentSlides(n) { //function for the dots
     showSlides(slideIndex = n)
 }
-function showSlides(n) {
+function showSlides(n) { //showing each slide function
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
@@ -22,6 +22,6 @@ function showSlides(n) {
         dots[slideIndex - 1].className += " active"
 }
 
-setInterval(function() {
+setInterval(function() { //time interval for auto moving image slider
     plusSlides(1)
   }, 5000);

@@ -16,9 +16,9 @@
 </head>
 <body>
     <header>
-        <div class = "containerheader">Moviex <img class = "logoresize"src="Images/MovieLogo.png" alt="image failed to load" style = "margin-left: 0%;">
+        <div class = "containerheader">Moviex <img class = "logoresize"src="Images/MovieLogo.png" alt="image failed to load" style = "margin-left: 0%;"> <!--movie logo plus website name-->
         <nav>
-            <div class="navigation"><a class="nav-but" href="index.html">Introduction</a>
+            <div class="navigation"><a class="nav-but" href="index.html">Introduction</a> <!--nav bar-->
                 <a class="nav-but" href="page2.html">Home</a></div>
         </nav>
         </div>
@@ -27,16 +27,16 @@
     </header>
     <br><br>
     <main>
-    <div class = "container">
+    <div class = "container"> <!--movie video-->
         <iframe class ="class1" width="80%" height="370vw" src="https://www.youtube.com/embed/X0tOpBuYasI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
     </div>
-    <div style="display: flex;"> <p class = "movieName">Black Adam</p>
+    <div style="display: flex;"> <p class = "movieName">Black Adam</p> <!--movie name plus ratings-->
     <p class="ratings">Ratings: 6.7/10</p> <img class ="star" src ="Images/star.png" alt="star">
     
     
     </div> 
-    <div class="about"><p class="aboutContents">About</p>
+    <div class="about"><p class="aboutContents">About</p> <!--movie description-->
         <p class="aboutContents">Five thousand years ago, the city of Kahndaq was under the tyrannical rule of king Anh-Kot, who intended to create the Crown of Sabbac, which is known to give the wearer great power. After enslaving his people and forcing them to dig for "Eternium" - the magical crystal needed to create the crown - a young boy leads the slaves to revolt against him. When the boy is given the power of Shazam, transforming him into Kahndaq's heroic champion Teth-Adam, he kills Anh-Kot and ends his reign.
 
             In the present day, Khandaq is oppressed by the Intergang. Archaeologist Adrianna Tomaz tries to locate the Crown of Sabbac, with the help of her brother Karim, and colleagues, Samir and Ishmael. As Adrianna obtains the crown, they are ambushed by the Intergang, killing Samir in the process. Adrianna accidentally reads an incantation which awakens Adam from his slumber, who subsequently slaughters most of the Intergang troops. After an Intergang soldier shoots an Eternium rocket at Adam which renders him comatose, it is revealed that Ishmael is an Intergang member who intends to take the crown for himself.
@@ -62,7 +62,7 @@
     <br>
     <p class ="movieName">Main Characters</p>
     <div>
-        <div class="swiper special">
+        <div class="swiper special"> <!--js swiper for characters-->
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -103,15 +103,15 @@
     <br>
     <br>
     <br>
-    <footer>
+    <footer> <!--form-->
         <div style="display: flex; justify-content:center;">
         <form method="post" action="#">
         <div class="comments">
-            <p class="words">Ratings</p>
+            <p class="words">Ratings</p> 
             
             <div class="stars">
                 
-                <input type="radio" name="rate" id="rate-5" onclick="lol('#five')">
+                <input type="radio" name="rate" id="rate-5" onclick="lol('#five')"> <!--stars with onclick function-->
                 <label for="rate-5"></label>
                 <input type="radio" name="rate" id="rate-4" onclick="lol('#four')">
                 <label for="rate-4"></label>
@@ -123,7 +123,7 @@
                 <label for="rate-1"></label>
             </div>
             <div class="input-stars">
-                <h1 class="rates" id="five">I love this movie</h1>
+                <h1 class="rates" id="five">I love this movie</h1> <!--text for form-->
                 <h1 class="rates" id="four">I like this movie</h1>
                 <h1 class="rates" id="three">I'm ok with this movie</h1>
                 <h1 class="rates" id="two">I dislike this movie</h1>
@@ -138,7 +138,7 @@
 
     </div>
         <div style="display:block; height:5vw; width:100%;"></div> <!--empty space for better looks purposes-->
-        <a class = "back" href="page2.html">Back to movie Page</a>
+        <a class = "back" href="page2.html">Back to movie Page</a> <!--back to movie page-->
         
     </footer>
     <script src="script3.js" defer></script>
